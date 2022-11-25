@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pergunta 10</title>
+    <link rel="stylesheet" href="style1.css"> 
+    
+</head>
+
+<body background = "fundo1.gif">
+  
+    <div class="container">
+    <br>  <br> 
+    <center><div id="pontos"> PONTOS: </div></center>
+
+
+    <div class="content">
+        <br>  <br>    
+        <h1 id="titulo">Pergunta 10</h1>
+        <br><br>
+        
+        <p> Em Minas Gerais existem dois jornais: o Diário da Tarde (D) e o Estado de Minas (E). <br>
+            Tendo em vista que os profissionais da área associam esses jornais aos átrios do coração, podemos afirmar que: </p>
+        <br>  <br>
+
+       <div class="alternativas">    
+            <input type="button" class="respostas1" id="alt4" name="altE" value="O jornal Estado de Minas representa a válvula átrio ventricular da direita 
+             e o Diário da Tarde a válvula ventricular da esquerda." onclick="altErrada(this, 'pergunta11.html')"></input>
+            <br>
+            <input type="button" class="respostas2" id="alt2" name="altE" value="Os dois jornais (simultaneamente) podem representar tanto o átrio direito 
+             quanto o átrio esquerdo." onclick="altErrada(this, 'pergunta11.html')"></input>
+            <br>
+            <input type="button" class="respostas3" id="alt3" name="altE" value="O jornal Estado de Minas representa a válvula átrio ventricular da esquerda
+             e direita." onclick="altErrada(this, 'pergunta11.html')"></input>
+            <br>
+            <input type="button" class="respostas4" id="alt1" name="altC" value="O jornal Estado de Minas representa a válvula átrio ventricular da esquerda 
+             e o Diário da Tarde a válvula ventricular da direita." onclick="altCertas('pergunta11.html')"></input>
+            <br>
+
+        </div>
+    </div>
+
+    </div>
+
+    <br><br><br><br>
+    <div class="max-width">
+        <button onclick="start();" class="bg-green">Iniciar</button>
+        <button onclick="pause();" class="bg-yellow">Pausar</button>
+        <button onclick="stop();" class="bg-red">Parar</button>
+        <h1 id="counter">00:00:00</h1>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="cron.js"></script>
+
+    <script>
+
+        function trocarPag() {
+
+            setTimeout(function mudar() {
+
+                window.location.href = "pergunta4.html"
+
+            }, 2000)
+
+        }
+</script>  
+
+    </div>
+
+    <script src="./script.js"></script>
+    </body>
+</html>

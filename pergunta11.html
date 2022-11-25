@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pergunta 11</title>
+    <link rel="stylesheet" href="style1.css"> 
+    <style>
+        .img_11 {
+        cursor: pointer;
+        height: 300px;
+        width: 300px;
+        border: 20px solid black;
+    }
+    </style>
+    
+</head>
+
+<body background = "fundo1.gif">
+  
+    <div class="container">
+    <br>  <br> 
+    <center><div id="pontos"> PONTOS: </div></center>
+
+
+    <div class="content">
+        <br>  <br>    
+        <h1 id="titulo">Pergunta 11</h1>
+        <br><br>
+        <center><img src="img11.jpg" class = "img_11"></center> 
+        <p> (UFPE) – Com relação à função de artérias e veias na circulação humana, analise da figura acima e as proposições abaixo<br>
+            <b>Esquema da circulação do sangue no corpo humano</b><br>
+            <br> Artérias pulmonares (1) levam aos pulmões o sangue vindo do corpo.<br>
+            <br> Veias pulmonares (2) trazem para o coração o sangue oxigenado nos pulmões.<br>
+            <br> Artéria aorta (3) leva o sangue oxigenado a todas as partes do corpo.<br>
+            <br> Veias cavas (4) trazem o sangue rico em gás carbônico do corpo ao coração.<br>
+            <br><b> Estão corretas:</b></p>
+        <br>  <br>
+
+       <div class="alternativas">    
+            <input type="button" class="respostas1" id="alt1" name="altC" value=" 1, 2, 3 e 4." onclick="altCertas('pergunta12.html')"></input>
+            <br>
+            <input type="button" class="respostas2" id="alt2" name="altE" value="1, 2 e 3 apenas." onclick="altErrada(this, 'pergunta12.html')"></input>
+            <br>
+            <input type="button" class="respostas3" id="alt3" name="altE" value="1 e 3 apenas." onclick="altErrada(this, 'pergunta12.html')"></input>
+            <br>
+            <input type="button" class="respostas4" id="alt4" name="altE" value="2 e 4 apenas." onclick="altErrada(this, 'pergunta12.html')"></input>
+            <br>
+
+        </div>
+    </div>
+
+    </div>
+
+    <br><br><br><br>
+        <div class="max-width">
+            <button onclick="start();" class="bg-green">Iniciar</button>
+            <button onclick="pause();" class="bg-yellow">Pausar</button>
+            <button onclick="stop();" class="bg-red">Parar</button>
+            <h1 id="counter">00:00:00</h1>
+        </div>
+
+    <script src="./script.js"></script>
+    <script src="cron.js"></script>
+
+    <script>
+
+        function trocarPag() {
+
+            setTimeout(function mudar() {
+
+                window.location.href = "pergunta4.html"
+
+            }, 2000)
+
+    }
+
+    </script>  
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

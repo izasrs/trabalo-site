@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <title> Resumo </title>
+
+</head>
+<body background = "fundo1.gif">
+    <div class="img">
+        <div class="holder">
+            <h1>
+                Sistema circulatorio ou cardiovascular
+            </h1>
+        </div>
+        <img src="imagem1.jpg">
+    </div>
+
+    <h2>SOBRE</h2>
+    <p>O sistema cardiovascular é responsável por transportar oxigênio para todas as células do corpo. 
+        Mas apenas o oxigênio não é suficiente para que as células produzam energia, elas precisam também de nutrientes, 
+        estes que vão vir da nossa alimentação(responsável por transportar oxigênio e nutrientes)  
+        Essas células vão produzir resíduos metabólicos, que precisam ser eliminados do corpo. O sistema cardiovascular vai ser o responsável 
+         por transportar esses resíduos para serem eliminados (gás carbono, vai ser transportado pelo sangue até os pulmões, para lá ser eliminado).
+         Outros resíduos produzidos pelas nossas células vão ser eliminados pelos rins, e esses resíduos, chegam até os rins através do sangue.  
+         Além do transporte, o sistema cardiovascular é responsável pela regulação 
+         da temperatura corporal e a defesa do organismo pelo sistema imunológico. 
+    </p>
+    <div class="link">
+        <a href='https://youtu.be/761HjdBB3FA' target="blank">Video sobre sistema circulatorio</a>
+    </div>
+
+    <div class="quiz">    
+        <center> <a href="pergunta1.html"><button style="background: #ff0000; border-radius: 6px; padding: 15px; cursor: pointer; color: #fff; border: none; font-size: 16px;" > Inicar Quiz </button></a></center>
+        <br>
+    </div>
+    
+    <script>
+        const img = document.querySelector("img")
+        const text = document.querySelector('p')
+        const h2 = document.querySelector('h2')
+        const a = document.querySelector('a')
+
+        img.addEventListener("click", trab)
+
+        var num = 1
+      
+        function trab() {
+            if(num < 5 ){
+               num++
+               if (num == 2) {
+                   text.innerHTML = 'É um fluido produzido pela medula óssea, composto por plaquetas, hemácias e leucócitos , que ficam espalhados pelo plasma. Quando Impulsionado pelo coração, o sangue é levado a todas as regiões do corpo no interior de artérias, veias e capilares sanguíneos. '
+                   h2.innerText = 'Sangue: '
+
+               }
+               if (num == 3) {
+                   text.innerHTML = 'São vasos que levam o sangue do coração até os órgãos e tecidos.<br /> Compostas por parede espessa, a compressão exercida pelas artérias permite controlar a pressão do sangue que circula em algumas regiões do corpo.<br />'
+                   h2.innerText = 'Artérias: '
+
+               } 
+               if (num == 4) { 
+                   text.innerHTML = 'São vasos muito finos que fazem a comunicação entre arteríolas e vênulas (veia de pequeno diâmetro).<br/>'
+                   h2.innerText = 'Capilares: '
+               } 
+               if (num == 5) {    
+                    text.innerHTML = 'Agora que você já sabe o que o sistema circulatório, que tal testar seu conhecimento?'
+                    h2.innerText = 'Quiz'
+
+           }   
+           }else{
+                num = 1 
+                text.innerHTML = 'Defesa contra agentes invasores, coagulação sanguínea, regulação da temperatura corporal, transporte de hormônios, intercâmbio de materiais, transporte de resíduos, nutrientes e gases.'
+                h2.innerText = 'Funções'
+
+           }
+           img.src=`imagem${num}.jpg`
+        }
+
+    </script>
+</body>
+</html>

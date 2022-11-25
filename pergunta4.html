@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pergunta 4</title>   
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        .coracao {
+        cursor: pointer;
+        height: 300px;
+        width: 300px;
+        border: 20px solid black;
+    }
+    </style>
+</head>
+<body background = "fundo1.gif">
+  
+    <div class="container">        
+    <br>  <br> 
+    <center><div id="pontos"> PONTOS: </div></center>
+    <div class="content">
+        <br>  <br> 
+        <h1 id="titulo">Pergunta 4</h1>
+        <br>  <br>  
+       <center><img src="coracao.png" class = "coracao"></center> 
+       <br><br>
+        
+        <p> (Mack-2003) – A respeito do desenho acima, que representa o coração de um mamífero, é INCORRETO afirmar que: </p>
+        <br>  
+        <div class="alternativas">
+
+            <input type="button" class= "respostas1" id="alt1" name="altC" value= "O número 2 indica a artéria cava superior que leva o sangue do coração para o corpo.." onclick="altCertas('pergunta5.html')"></input>
+            <br>
+            <input type="button" class="respostas2" id="alt3" name="altE" value= "O número 3 indica a artéria pulmonar que leva o sangue do coração para o pulmão." onclick="altErrada(this, 'pergunta5.html')"></input>
+            <br>
+            <input type="button" class="respostas3" id="alt2" name="altE" value= "O número 1 indica a veia cava inferior que traz o sangue do corpo para o coração." onclick="altErrada(this, 'pergunta5.html')"></input>
+            <br>
+            <input type="button"class="respostas4" id="alt4" name="altE" value="O número 4 é artéria aorta que leva o sangue do coração para o corpo." onclick="altErrada(this, 'pergunta5.html')"></input>
+            <br>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="max-width">
+        <button onclick="start();" class="bg-green">Iniciar</button>
+        <button onclick="pause();" class="bg-yellow">Pausar</button>
+        <button onclick="stop();" class="bg-red">Parar</button>
+        <h1 id="counter">00:00:00</h1>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="cron.js"></script>
+
+    <script>
+
+        function trocarPag() {
+
+            setTimeout(function mudar() {
+
+                window.location.href = "pergunta4.html"
+
+        }, 2000)
+
+    }
+
+    </script>
+      
+        </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

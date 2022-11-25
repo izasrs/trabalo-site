@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pergunta 6</title>
+    <link rel="stylesheet" href="style1.css"> 
+    
+</head>
+
+<body background = "fundo1.gif">
+  
+    <div class="container">
+    <br>  <br> 
+    <center><div id="pontos"> PONTOS: </div></center>
+
+
+    <div class="content">
+        <br>  <br>    
+        <h1 id="titulo">Pergunta 6</h1>
+        <br><br>
+        
+        <p>  É muito comum ouvirmos a seguinte afirmação: “As artérias carregam sangue arterial, rico em oxigênio, <br> 
+            e as veias carregam sangue venoso, pobre em oxigênio”. Entretanto, esta generalização está incorreta, visto  <br> 
+            que o sangue venoso (aquele que corre nas veias) nem sempre é pobre em oxigênio, e o sangue arterial (aquele  <br>
+            que corre nas artérias) nem sempre é rico em oxigênio. Quais dos vasos abaixo relacionados poderiam exemplificar <br> 
+            que essa generalização não ocorre nos mamíferos? <br>
+
+           <br> I. Vasos que saem do ventrículo esquerdo do coração. <br>
+            
+           <br> II. Vasos que chegam ao átrio esquerdo do coração. <br>
+            
+           <br> III. Vasos que saem do ventrículo direito do coração. <br>
+            
+           <br> IV. Vasos que chegam ao átrio direito do coração. <br>
+            
+           <br> <b> Das afirmativas acima, estão corretas apenas: <br></b>
+
+        </p>
+        <br>  <br>
+
+        <div class="alternativas">    
+
+            <input type="button" class="respostas1" id="alt4" name="altE" value= "I e II." onclick="altErrada(this, 'pergunta7.html')"></input> 
+            <br>
+            <input type="button" class="respostas2" id="alt2" name="altE" value=" I e III." onclick="altErrada(this, 'pergunta7.html')"></input>
+            <br>
+            <input type="button" class="respostas3" id="alt3" name="altE" value="II e IV." onclick="altErrada(this, 'pergunta7.html')"></input>
+            <br>
+            <input type="button" class="respostas4" id="alt1" name="altC" value=" II e III." onclick="altCertas('pergunta7.html')"></input>
+            <br>
+
+        </div>
+    </div>  
+    </div>
+    <br><br><br><br>
+    <div class="max-width">
+        <button onclick="start();" class="bg-green">Iniciar</button>
+        <button onclick="pause();" class="bg-yellow">Pausar</button>
+        <button onclick="stop();" class="bg-red">Parar</button>
+        <h1 id="counter">00:00:00</h1>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="cron.js"></script>
+
+    <script>
+
+    function trocarPag() {
+
+        setTimeout(function mudar() {
+
+            window.location.href = "pergunta4.html"
+
+        }, 2000)
+
+    }
+</script>  
+</div>
+        <script src="./script.js"></script>
+</body>
+</html>

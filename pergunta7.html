@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pergunta 7</title>
+    <link rel="stylesheet" href="style1.css"> 
+
+    <style>
+        .veias {
+        cursor: pointer;
+        height: 300px;
+        width: 300px;
+        border: 20px solid black;
+    }
+    </style>
+    
+</head>
+
+<body background = "fundo1.gif">
+  
+    <div class="container">
+    <br>  <br> 
+    <center><div id="pontos"> PONTOS: </div></center>
+
+
+    <div class="content">
+        <br>  
+        <h1 id="titulo">Pergunta 7</h1>
+        <br>
+        <center><img src="veias.jpg" class = "veias"></center> 
+        <br>
+        <p> (Fatec-SP) – A figura a seguir esquematiza o coração de um mamífero, com suas câmaras <br>
+            (representadas por letras), veias e artérias (representadas por algarismos). <br>
+           <b> Identifique cada parte do coração e assinale a alternativa que apresenta a correspondência correta.</p></b>
+        <br> 
+       <div class="alternativas">    
+            <input type="button" class="respostas1" id="alt3" name="altE" value=" O sangue rico em O2 chega nas câmaras A e B." onclick="altErrada(this, 'pergunta8.html')"></input>
+            <br>
+            <input type="button" class="respostas2" id="alt2" name="altE" value="O sangue rico em CO2 chega na câmara B." onclick="altErrada(this, 'pergunta8.html')"></input>
+            <br>
+            <input type="button" class="respostas3" id="alt1" name="altC" value="O vaso indicado por IV traz sangue arterial dos pulmões para o coração." onclick="altCertas( 'pergunta8.html')"></input>
+            <br>
+            <input type="button" class="respostas4" id="alt4" name="altE" value="Os vasos identificados por I, II e III são, respectivamente, veia cava superior, artéria pulmonar e artéria aorta." onclick="altErrada(this, 'pergunta8.html')"></input>
+            <br>
+
+        </div>
+    </div>
+
+    </div>
+
+    <br><br><br><br>
+    <div class="max-width">
+        <button onclick="start();" class="bg-green">Iniciar</button>
+        <button onclick="pause();" class="bg-yellow">Pausar</button>
+        <button onclick="stop();" class="bg-red">Parar</button>
+        <h1 id="counter">00:00:00</h1>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="cron.js"></script>
+
+<script>
+
+    function trocarPag() {
+
+        setTimeout(function mudar() {
+
+            window.location.href = "pergunta4.html"
+
+        }, 2000)
+
+    }
+*/
+</script>  
+
+    </div>
+
+    <script src="./script.js"></script>
+    </body>
+</html>

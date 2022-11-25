@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pergunta 12</title>
+    <link rel="stylesheet" href="style1.css"> 
+    
+</head>
+
+<body background = "fundo1.gif">
+  
+    <div class="container">
+    <br>  <br> 
+    <center><div id="pontos"> PONTOS: </div></center>
+
+
+    <div class="content">
+        <br>  <br>    
+        <h1 id="titulo">Pergunta 12</h1>
+        <br><br>
+        
+        <p> Se pudéssemos marcar uma única hemácia do sangue de uma pessoa, quando de sua passagem por um capilar sanguíneo do pé,<br>
+            e seguir seu trajeto pelo corpo a partir dali, detectaríamos sua passagem, sucessivamente, pelo interior de: </p>
+        <br>  <br>
+
+       <div class="alternativas">    
+            <input type="button" class="respostas1" id="alt2" name="altE" value="Artérias -> veias -> coração -> artérias -> pulmão -> veias -> capilares." onclick="altErrada(this,  'pergunta13.html')"></input>
+            <br>
+            <input type="button" class="respostas2" id="alt1" name="altC" value="Veias -> coração -> artérias -> pulmão -> veias -> coração -> artérias -> capilares." onclick="altCertas( 'pergunta13.html')"></input>
+            <br>
+            <input type="button" class="respostas3" id="alt3" name="altE" value="Artérias -> coração -> veias -> pulmão -> veias -> coração -> artérias -> capilares." onclick="altErrada(this, 'pergunta13.html')"></input>
+            <br>
+            <input type="button" class="respostas4" id="alt4" name="altE" value="Veias -> artérias -> coração -> veias -> pulmão -> artérias -> capilares." onclick="altErrada(this, 'pergunta13.html')"></input>
+            <br>
+
+        </div>
+    </div>
+
+    </div>
+
+    <br><br><br><br>
+    <div class="max-width">
+        <button onclick="start();" class="bg-green">Iniciar</button>
+        <button onclick="pause();" class="bg-yellow">Pausar</button>
+        <button onclick="stop();" class="bg-red">Parar</button>
+        <h1 id="counter">00:00:00</h1>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="cron.js"></script>
+
+    <script>
+
+        function trocarPag() {
+
+            setTimeout(function mudar() {
+
+                window.location.href = "pergunta4.html"
+
+            }, 2000)
+
+        }
+
+    </script>  
+
+    </div>
+    <script>
+        let pontos = 0;
+    </script>
+    <script>
+        localStorage.setItem('pontos', 0)
+    </script>
+    <script src="./script.js"></script>
+    </body>
+</html>

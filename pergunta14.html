@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pergunta 14</title>
+    <link rel="stylesheet" href="style1.css"> 
+    
+</head>
+
+<body background = "fundo1.gif">
+  
+    <div class="container">
+    <br>  <br> 
+    <center><div id="pontos"> PONTOS: </div></center>
+
+
+    <div class="content">
+        <br>  <br>    
+        <h1 id="titulo">Pergunta 14</h1>
+        <br><br>
+        
+        <p> "Aqui na Terra, o sangue de uma pessoa tende fluir para as pernas por causa da gravidade <br>
+            (as veias das pernas possuem válvulas que ajudam a manter o fluxo de sangue das pernas de volta ao coração)”.<br>
+           <b> Através da frase anterior, é possível afirmar que: </p></b>
+        <br>  <br>
+
+       <div class="alternativas">    
+            <input type="button" class="respostas1" id="alt1" name="altC" value= "Devido a falta de gravidade, o sangue flui em direção 
+        contrária, o que causa um desvio líquido. Este desvio faz 
+        com que o coração mude de tamanho para se adequar à circulação." onclick="altCertas('pergunta15.html')"></input>
+            <br>
+            <input type="button" class="respostas2" id="alt2" name="altE" value= "No espaço o sangue flui da mesma maneira." onclick="altErrada(this, 'pergunta15.html')"></input>
+            <br>
+            <input type="button" class="respostas3" id="alt3" name="altE" value= "Devido a falta de gravidade, o sangue flui em direção contrária,
+        o que causa um desvio líquido, mas este desvio não altera nada 
+        em relação à circulação" onclick="altErrada(this, 'pergunta15.html')"></input>
+            <br>
+            <input type="button" class="respostas4" id="alt4" name="altE" value= "Todas as alternativas estão erradas."onclick="altErrada(this, 'pergunta15.html')"></input>
+            <br>
+
+        </div>
+    </div>
+
+    </div>
+
+    <br><br><br><br>
+<div class="max-width">
+    <button onclick="start();" class="bg-green">Iniciar</button>
+    <button onclick="pause();" class="bg-yellow">Pausar</button>
+    <button onclick="stop();" class="bg-red">Parar</button>
+    <h1 id="counter">00:00:00</h1>
+</div>
+
+<script src="./script.js"></script>
+<script src="cron.js"></script>
+
+<script>
+
+    function trocarPag() {
+
+        setTimeout(function mudar() {
+
+            window.location.href = "pergunta4.html"
+
+        }, 2000)
+
+    }
+*/
+</script>  
+
+    </div>
+    <script src="./script.js"></script>
+    </body>
+</html>
