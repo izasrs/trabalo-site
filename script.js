@@ -33,3 +33,5 @@ function trocarPag(src) {
     }, 2000)
 
 }
+
+
